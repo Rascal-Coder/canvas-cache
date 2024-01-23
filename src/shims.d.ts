@@ -1,5 +1,5 @@
 declare interface Window {
-  // extend the window
+  RAF: ((callback: FrameRequestCallback) => number) | ((callback: (time: DOMHighResTimeStamp) => void) => number)
 }
 
 // with unplugin-vue-markdown, markdown files can be treated as Vue components
@@ -16,3 +16,5 @@ declare module '*.vue' {
   const component: DefineComponent<object, object, any>
   export default component
 }
+
+declare module 'stats.js'

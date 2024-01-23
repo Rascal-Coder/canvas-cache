@@ -3,11 +3,12 @@ import { setupLayouts } from 'virtual:generated-layouts'
 
 // import Previewer from 'virtual:vue-component-preview'
 import { routes } from 'vue-router/auto/routes'
+
 import App from './App.vue'
 import type { UserModule } from './types'
-
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
+import 'unocss-ui/style.css'
 import 'uno.css'
 
 // const routes = setupLayouts(generatedRoutes)
